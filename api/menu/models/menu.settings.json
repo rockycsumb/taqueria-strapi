@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menus",
+  "info": {
+    "name": "menu",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "menu_item": {
+      "type": "string"
+    },
+    "menu_description": {
+      "type": "string"
+    },
+    "menu_price": {
+      "type": "string"
+    },
+    "menu_type": {
+      "type": "enumeration",
+      "enum": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    }
+  }
+}
