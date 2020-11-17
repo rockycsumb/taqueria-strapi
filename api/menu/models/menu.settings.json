@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "menus",
   "info": {
-    "name": "menu",
+    "name": "menu_item",
     "description": ""
   },
   "options": {
@@ -11,22 +11,18 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "menu_item": {
+    "menu_item_title": {
       "type": "string"
     },
-    "menu_description": {
+    "menu_item_description": {
       "type": "string"
     },
-    "menu_price": {
-      "type": "string"
+    "menu_item_price": {
+      "type": "decimal"
     },
-    "menu_type": {
-      "type": "enumeration",
-      "enum": [
-        "breakfast",
-        "lunch",
-        "dinner"
-      ]
+    "categories": {
+      "collection": "category",
+      "via": "menus"
     }
   }
 }
